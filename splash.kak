@@ -30,17 +30,15 @@ hook -group splash global WinCreate '\*scratch\*' %{
    │   ████◤◥█◣ A K O U N E                          /kə'kuːn/             │
    │                                                                       │
    │                                                                       │
-   │                                                                       │
-   │                                                                       │
-   │                                                                       │
    │   Edit this buffer                              %%c                    │
    │   Save on disk                                  :w FILENAME <enter>   │
    │   Open a file                                   :e <space>            │
    │   Read help                                     :doc <space>          │
    │   Quit                                          :q <enter>            │
    │                                                                       │
+   │   Press any key                                                       │
+   │                                                                       │
    └───────────────────────────────────────────────────────────────────────┘
-
 
 "
         execute-keys <esc><esc> <percent> R
@@ -76,6 +74,8 @@ hook -group splash global WinCreate '\*scratch\*' %{
         "1:%opt(splash_faded)" 2:default,+b "3:%opt(splash_faded)"
     add-highlighter window/splash/quit regex '^ *│ *(Quit) + (:q) (<enter>)' \
         "1:%opt(splash_faded)" 2:default,+b "3:%opt(splash_faded)"
+    add-highlighter window/splash/press regex 'Press any key' \
+        "0:%opt(splash_faded)" 
 
     # On first window opening, change cursor faces to make them invisible.
     hook -group splash window -once WinDisplay '\*scratch\*' %{
