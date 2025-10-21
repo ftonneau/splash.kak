@@ -22,23 +22,23 @@ hook -group splash global WinCreate '\*scratch\*' %{
 
 
 
-   ┌───────────────────────────────────────────────────────────────────────┐
-   │                                                                       │
-   │   ███ ◢██◤                                                            │
-   │   ███◢██◤                                                             │
-   │   █████◤◣                                                             │
-   │   ████◤◥█◣ A K O U N E                          /kə'kuːn/             │
-   │                                                                       │
-   │                                                                       │
-   │   Edit this buffer                              %%c                    │
-   │   Save on disk                                  :w FILENAME <enter>   │
-   │   Open a file                                   :e <space>            │
-   │   Read help                                     :doc <space>          │
-   │   Quit                                          :q <enter>            │
-   │                                                                       │
-   │   Press any key                                                       │
-   │                                                                       │
-   └───────────────────────────────────────────────────────────────────────┘
+   ┌─────────────────────────────────────────────────────────────────────────────┐
+   │                                                                             │
+   │   ███ ◢██◤                                                                  │
+   │   ███◢██◤                                                                   │
+   │   █████◤◣                                                                   │
+   │   ████◤◥█◣ A K O U N E                                /kə'kuːn/             │
+   │                                                                             │
+   │                                                                             │
+   │   Edit this buffer                                    %%c                    │
+   │   Save on disk                                        :w FILENAME <enter>   │
+   │   Open a file                                         :e <space>            │
+   │   Read help                                           :doc <space>          │
+   │   Quit                                                :q <enter>            │
+   │                                                                             │
+   │   Press any key                                                             │
+   │                                                                             │
+   └─────────────────────────────────────────────────────────────────────────────┘
 
 "
         execute-keys <esc><esc> <percent> R
