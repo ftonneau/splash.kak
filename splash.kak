@@ -64,15 +64,15 @@ hook -group splash global WinCreate '\*scratch\*' %{
     add-highlighter window/splash/phon regex "/kə'kuːn/" \
         "0:%opt(splash_phon_fg),%opt(splash_phon_bg)+b"
 
-    add-highlighter window/splash/edit regex '^ *│ *(Edit this buffer) + (%c)' \
+    add-highlighter window/splash/edit regex '(Edit this buffer) + (%c)' \
         "1:%opt(splash_faded)" 2:default,+b "3:%opt(splash_faded)"
-    add-highlighter window/splash/save regex '^ *│ *(Save on disk) + (:w) FILENAME (<enter>)' \
+    add-highlighter window/splash/save regex '(Save on disk) + (:w) FILENAME (<enter>)' \
         "1:%opt(splash_faded)" 2:default,+b "3:%opt(splash_faded)"
-    add-highlighter window/splash/open regex '^ *│ *(Open a file) + (:e) (<space>)' \
+    add-highlighter window/splash/open regex '(Open a file) + (:e) (<space>)' \
         "1:%opt(splash_faded)" 2:default,+b "3:%opt(splash_faded)"
-    add-highlighter window/splash/help regex '^ *│ *(Read help) + (:doc) (<space>)' \
+    add-highlighter window/splash/help regex '(Read help) + (:doc) (<space>)' \
         "1:%opt(splash_faded)" 2:default,+b "3:%opt(splash_faded)"
-    add-highlighter window/splash/quit regex '^ *│ *(Quit) + (:q) (<enter>)' \
+    add-highlighter window/splash/quit regex '(Quit) + (:q) (<enter>)' \
         "1:%opt(splash_faded)" 2:default,+b "3:%opt(splash_faded)"
     add-highlighter window/splash/press regex 'Press any key' \
         "0:%opt(splash_faded)" 
