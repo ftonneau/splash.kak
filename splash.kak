@@ -1,5 +1,5 @@
 # This script fills Kakoune scratch buffers with a logo and help messages.
-# Author: Francois Tonneau
+# Author: François Tonneau
 
 declare-option -docstring 'Splash screen: frame color' str splash_frame rgb:dfdedb
 
